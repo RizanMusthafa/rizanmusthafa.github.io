@@ -1,8 +1,12 @@
-div.container div.row{
+* {
+  text-decoration: none;
+}
+
+div.container div.row {
   padding: 50px;
 }
 
-div.container div p{
+div.container div p {
   font-size: 20px;
   padding-top: 50px;
 }
@@ -12,6 +16,11 @@ div.container div img.my {
   height: 200px;
   border-radius: 45%;
 }
+
+.show-case img {
+  height: 350px;
+}
+
 .section::before {
   content: "";
   display: block;
