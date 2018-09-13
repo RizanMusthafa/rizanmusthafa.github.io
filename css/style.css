@@ -145,3 +145,20 @@ footer {
 .facebook:hover {
   color: #3c5a98;
 }
+@media only screen and (max-width: 768px) {
+  .main-title {
+    font-size: 30px;
+  }
+
+  .main-btn-set .btn {
+    display: block !important;
+    width: 60% !important;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .skill-desc {
+    padding: 10px !important;
+  }
+}
