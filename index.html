@@ -16,7 +16,7 @@
 <body>
   <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
     <div class="container">
-      <a href="/" class="navbar-brand">
+      <a href="#home" class="navbar-brand scrollspy-trigger">
         <img src="./img/pro_pic.png" alt="Rizan Mohomed web dveloper" width="30px" class="rounded" />
         Rizan Mohomed
       </a>
@@ -29,16 +29,22 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link scrollspy-trigger" href="#home">
               <i class="fas fa-home"> </i>
               Home
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link scrollspy-trigger" href="#skills">
               <i class="fas fa-box"> </i>
               Skill Box
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollspy-trigger" href="#achievements">
+              <i class="fas fa-trophy"> </i>
+              Achievements
             </a>
           </li>
           <li class="nav-item">
@@ -84,7 +90,7 @@
       <h4 class="section-head">My Skills in web development technologies</h4>
       <div class="row">
         <div class="col-md-7 border border-primary p-3 rounded">
-          <img src="./img/skill-logos/html_Logo.png" alt="" data-toggle="popover" title="HTML 5" data-content="Advance"
+          <img src="./img/skill-logos/html_logo.png" alt="" data-toggle="popover" title="HTML 5" data-content="Advance"
             data-placement="top" data-trigger="hover" />
 
           <img src="./img/skill-logos/css_logo.png" alt="" data-toggle="popover" title="CSS 3" data-content="Intermediate / Advance"
@@ -108,13 +114,13 @@
           <img src="./img/skill-logos/jquery_logo.png" alt="" data-toggle="popover" title="Jquery" data-content="Intermediate / Advance"
             data-placement="top" data-trigger="hover">
 
-          <img src="./img/skill-logos/typescript_logo.svg" alt="" data-toggle="popover" title="TypeScript" data-content="Intermediate / Advance"
+          <img src="./img/skill-logos/typescript_logo.png" alt="" data-toggle="popover" title="TypeScript" data-content="Intermediate / Advance"
             data-placement="top" data-trigger="hover">
 
           <img src="./img/skill-logos/webpack_logo.png" alt="" data-toggle="popover" title="Webpack" data-content="Intermediate / Advance"
             data-placement="top" data-trigger="hover">
 
-          <img src="./img/skill-logos/react.js_logo.png" alt="" data-toggle="popover" title="ReactJS" data-content="Intermediate"
+          <img src="./img/skill-logos/reactjs_logo.png" alt="" data-toggle="popover" title="ReactJS" data-content="Intermediate"
             data-placement="top" data-trigger="hover">
 
           <img src="./img/skill-logos/angular_logo.png" alt="" data-toggle="popover" title="Angular (2+)" data-content="Intermediate"
@@ -167,17 +173,59 @@
           <p>
             I always like to keep up with new technologies. I have an intermediate level Front-end development
             knowledge
-            and as well as some basic backend development knowledge.
+            and as well as backend development knowledge.
           </p>
           <p>
             My primary computer language is <b>JavaScript</b>. For some
-            large projects, I use <b>React</b> as a framework.
+            large projects, I use <b>React</b> as a front-end framework and <b>Express</b> as a backend framework.
           </p>
           <p>
             In this my skill box I have placed some technologies with the
             level of my knowledge on that (to view it move the mouse pointer on each one).
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements" class="achivements-section py-5">
+    <div class="container">
+      <h4 class="section-head">My Achievements</h4>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <div class="card bg-light">
+            <img src="./img/achivements/certificate_fcc_fronend.png" alt="certificate for rizan" class="card-img-top">
+            <div class="card-body">
+              <h5 class="text-center">legacy front-end certificate from freecodecamp</h5>
+              <ul class="text-info ach-ins-list">
+                <li class="">600+ hours</li>
+                <li class="">10 Projects</li>
+              </ul>
+            </div>
+            <div class="card-footer text-right">
+              <a href="https://www.freecodecamp.org/certification/rizanmusthafa/legacy-front-end" target="_blank" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 p-3">
+          <div class="card bg-light">
+            <img src="./img/achivements/certificate_fcc_algorithm.png" alt="certificate for rizan" class="card-img-top">
+            <div class="card-body">
+              <h5 class="text-center">JavaScript Algorithms and Data Structures Projects</h5>
+              <ul class="text-info ach-ins-list">
+                <li class="">300+ hours</li>
+                <li class="">40+ Algorithms</li>
+              </ul>
+            </div>
+            <div class="card-footer text-right">
+              <a href="https://www.freecodecamp.org/certification/rizanmusthafa/javascript-algorithms-and-data-structures"
+                target="_blank" class="btn">View</a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </section>
