@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Righteous|Roboto+Slab|Ubuntu");
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto+Slab|Ubuntu');
 
 html,
 body {
   height: 100%;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 body {
@@ -37,12 +37,12 @@ i {
   background-color: #333 !important;
 }
 
-.cv-btn {
-  /* position: absolute;
+/* .cv-btn {
+  position: absolute;
   margin-left: 30px;
   right: 20px;
-  z-index: 2000; */
-}
+  z-index: 2000;
+} */
 
 header {
   background: url(../img/coding.png);
@@ -59,7 +59,7 @@ header .main-title {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  font-family: "Righteous", cursive;
+  font-family: 'Righteous', cursive;
 }
 
 header .main-btn-set {
@@ -89,7 +89,11 @@ header .main-btn-set {
 
 .skill-desc p {
   font-size: 1.1rem;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.achivements-section {
+  background-color: #fffffe;
 }
 
 .project-section {
@@ -161,4 +165,14 @@ footer {
   .skill-desc {
     padding: 10px !important;
   }
+}
+
+.ach-ins-list {
+  list-style-type: none;
+}
+
+.ach-view-link {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
 }
