@@ -65,7 +65,7 @@ export const profile: Profile = {
   availability: 'Open to Remote',
   email: 'musthafarizan@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rizan-mohomed',
-  photo: '/images/pro-pic.png',
+  photo: '/images/pro-pic.jpg',
 
   summary: `Senior Software Engineer with 7+ years of experience designing and delivering scalable web and cross-platform mobile applications. Specialized in React, React Native, Flutter, TypeScript, and modern backend technologies. Proven track record of leading teams, shipping AI-powered features, and working closely with clients in Telecom, Healthcare, Travel, and FinTech domains. Strong problem solver with hands-on leadership and full-stack expertise, focused on clean architecture and long-term maintainability.`,
 

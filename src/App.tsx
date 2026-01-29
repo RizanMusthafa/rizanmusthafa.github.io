@@ -22,7 +22,7 @@ function App() {
     description: profile.summary,
     email: `mailto:${profile.email}`,
     url: siteUrl,
-    image: `${siteUrl}/images/pro-pic.png`,
+    image: `${siteUrl}/images/pro-pic.jpg`,
     sameAs: [profile.linkedin],
     address: {
       '@type': 'PostalAddress',
@@ -59,7 +59,7 @@ function App() {
         <meta property="og:url" content={siteUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={`${siteUrl}/images/pro-pic.png`} />
+        <meta property="og:image" content={`${siteUrl}/images/pro-pic.jpg`} />
         <meta property="og:image:alt" content={profile.name} />
         <meta property="og:site_name" content={profile.name} />
         <meta property="og:locale" content="en_US" />
@@ -69,7 +69,7 @@ function App() {
         <meta name="twitter:url" content={siteUrl} />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
-        <meta name="twitter:image" content={`${siteUrl}/images/pro-pic.png`} />
+        <meta name="twitter:image" content={`${siteUrl}/images/pro-pic.jpg`} />
 
         {/* Additional Meta Tags */}
         <meta name="theme-color" content="#1e3a5f" />
