@@ -1,493 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rizan Mohomed</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
-</head>
-
-<body>
-  <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-    <div class="container">
-      <a href="#home" class="navbar-brand scrollspy-trigger">
-        <img src="./img/pro_pic.jpeg" alt="Rizan Mohomed web dveloper" width="30px" class="rounded" />
-        Rizan Mohomed
-      </a>
-      <div class="form-inline">
-        <a href="./docs/cv.pdf" target="_blank" class="btn btn-sm btn-danger cv-btn"><i class="fa fa-book"> </i> View
-          CV </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Rizan Mohomed | Associate Technical Lead & Senior Software Engineer</title>
+    <meta name="title" content="Rizan Mohomed | Associate Technical Lead & Senior Software Engineer" />
+    <meta name="description" content="Senior Software Engineer with 7+ years of experience in React, React Native, Flutter, and TypeScript. Building scalable web and mobile applications for Telecom, Healthcare, Travel, and FinTech industries." />
+    <meta name="keywords" content="Rizan Mohomed, Software Engineer, Associate Technical Lead, React Developer, React Native Developer, Flutter Developer, TypeScript, Full Stack Developer, Sri Lanka, Remote Developer" />
+    <meta name="author" content="Rizan Mohomed" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/pro-pic.png" />
+    <link rel="apple-touch-icon" href="/images/pro-pic.png" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1e3a5f" />
+    <meta name="msapplication-TileColor" content="#1e3a5f" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rizanmusthafa.github.io/" />
+    <meta property="og:title" content="Rizan Mohomed | Associate Technical Lead & Senior Software Engineer" />
+    <meta property="og:description" content="Senior Software Engineer with 7+ years of experience in React, React Native, Flutter, and TypeScript. Building scalable web and mobile applications." />
+    <meta property="og:image" content="https://rizanmusthafa.github.io/images/pro-pic.png" />
+    <meta property="og:image:alt" content="Rizan Mohomed" />
+    <meta property="og:site_name" content="Rizan Mohomed Portfolio" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://rizanmusthafa.github.io/" />
+    <meta name="twitter:title" content="Rizan Mohomed | Associate Technical Lead & Senior Software Engineer" />
+    <meta name="twitter:description" content="Senior Software Engineer with 7+ years of experience in React, React Native, Flutter, and TypeScript." />
+    <meta name="twitter:image" content="https://rizanmusthafa.github.io/images/pro-pic.png" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rizanmusthafa.github.io/" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Fallback for no JavaScript -->
+    <noscript>
+      <div style="padding: 40px; text-align: center; font-family: system-ui, sans-serif;">
+        <h1>Rizan Mohomed</h1>
+        <p>Associate Technical Lead & Senior Software Engineer</p>
+        <p>Please enable JavaScript to view this portfolio website.</p>
+        <p>Contact: <a href="mailto:musthafarizan@gmail.com">musthafarizan@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rizan-mohomed">linkedin.com/in/rizan-mohomed</a></p>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link scrollspy-trigger" href="#home">
-              <i class="fas fa-home"> </i>
-              Home
-            </a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link scrollspy-trigger" href="#skills">
-              <i class="fas fa-box"> </i>
-              Skill Box
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollspy-trigger" href="#achievements">
-              <i class="fas fa-trophy"> </i>
-              Achievements
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollspy-trigger" href="#projects">
-              <i class="fas fa-project-diagram"> </i>
-              Projects
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link scrollspy-trigger" href="#contact">
-              <i class="fas fa-phone"> </i>
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header id="home">
-    <div class="text-light main-title">
-      <div class="container">
-        <h1 class="display-3">Rizan Mohomed</h1>
-        <p class="lead col-12 col-sm-8">I am learning web development every day and always like to
-          keep up with the
-          latest technologies</p>
-      </div>
-    </div>
-    <div class="main-btn-set">
-      <a href="#projects" class="btn btn-lg btn-outline-info px-5  scrollspy-trigger">
-        <i class="fas fa-project-diagram"> </i>
-        My Projects
-      </a>
-      <a href="#skills" class="btn btn-lg btn-outline-info px-5  scrollspy-trigger">
-        <i class="fas fa-box"> </i>
-        My Skills
-      </a>
-    </div>
-  </header>
-
-  <section id="skills" class="skill-section bg-light text-dark py-5">
-    <div class="container skill-box">
-      <h4 class="section-head">My Skills in web development technologies</h4>
-      <div class="row">
-        <div class="col-md-7 border border-primary p-3 rounded">
-          <img src="./img/skill-logos/html_logo.png" alt="" data-toggle="popover" title="HTML 5" data-content="Advance"
-            data-placement="top" data-trigger="hover" />
-
-          <img src="./img/skill-logos/css_logo.png" alt="" data-toggle="popover" title="CSS 3" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/bootstrap_logo.png" alt="" data-toggle="popover" title="Bootstrap 3 & 4"
-            data-content="Advance" data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/materialize_logo.png" alt="" data-toggle="popover" title="Materialize CSS"
-            data-content="Intermediate" data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/sass_logo.png" alt="" data-toggle="popover" title="SASS / SCSS" data-content="Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/javascript_logo.png" alt="" data-toggle="popover" title="JavaScript" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/es6_logo.png" alt="" data-toggle="popover" title="ES6 (~es7)" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/jquery_logo.png" alt="" data-toggle="popover" title="Jquery" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/typescript_logo.png" alt="" data-toggle="popover" title="TypeScript" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/webpack_logo.png" alt="" data-toggle="popover" title="Webpack" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/reactjs_logo.png" alt="" data-toggle="popover" title="ReactJS" data-content="Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/angular_logo.png" alt="" data-toggle="popover" title="Angular (2+)" data-content="Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/vuejs_logo.png" alt="" data-toggle="popover" title="VueJS" data-content="Basic / Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/nodejs_logo.png" alt="" data-toggle="popover" title="NodeJS" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/firebase_logo.png" alt="" data-toggle="popover" title="FireBase" data-content="Basic / Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/php_logo.png" alt="" data-toggle="popover" title="PHP (5-7)" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/sql_logo.png" alt="" data-toggle="popover" title="SQL" data-content="Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/python_logo.png" alt="" data-toggle="popover" title="Python" data-content="Basic / Intermediate"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/django_logo.png" alt="" data-toggle="popover" title="Django" data-content="Basic"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/redux_logo.png" alt="" data-toggle="popover" title="Redux" data-content="Basic"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/git_logo.png" alt="" data-toggle="popover" title="GIT" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/github_logo.png" alt="" data-toggle="popover" title="GitHub" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/vscode_logo.png" alt="" data-toggle="popover" title="Visual Studio Code"
-            data-content="Intermediate / Advance" data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/atom_logo.png" alt="" data-toggle="popover" title="Atom" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/linux_logo.png" alt="" data-toggle="popover" title="Linux OS" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-          <img src="./img/skill-logos/windows_logo.png" alt="" data-toggle="popover" title="Windows OS" data-content="Intermediate / Advance"
-            data-placement="top" data-trigger="hover">
-
-        </div>
-        <div class="col-md-5 pl-5 mt-3 text-justify text-primary skill-desc">
-          <p>
-            I always like to keep up with new technologies. I have an intermediate level Front-end development
-            knowledge
-            and as well as backend development knowledge.
-          </p>
-          <p>
-            My primary computer language is <b>JavaScript</b>. For some
-            large projects, I use <b>React</b> as a front-end framework and <b>Express</b> as a backend framework.
-          </p>
-          <p>
-            In this my skill box I have placed some technologies with the
-            level of my knowledge on that (to view it move the mouse pointer on each one).
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="achievements" class="achivements-section py-5">
-    <div class="container">
-      <h4 class="section-head">My Achievements</h4>
-      <div class="row">
-        <div class="col-md-6 p-3">
-          <div class="card bg-light">
-            <img src="./img/achivements/certificate_fcc_fronend.png" alt="certificate for rizan" class="card-img-top">
-            <div class="card-body">
-              <h5 class="text-center">legacy front-end certificate from freecodecamp</h5>
-              <ul class="text-info ach-ins-list">
-                <li class="">600+ hours</li>
-                <li class="">10 Projects</li>
-              </ul>
-            </div>
-            <div class="card-footer text-right">
-              <a href="https://www.freecodecamp.org/certification/rizanmusthafa/legacy-front-end" target="_blank" class="btn">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 p-3">
-          <div class="card bg-light">
-            <img src="./img/achivements/certificate_fcc_algorithm.png" alt="certificate for rizan" class="card-img-top">
-            <div class="card-body">
-              <h5 class="text-center">JavaScript Algorithms and Data Structures Projects</h5>
-              <ul class="text-info ach-ins-list">
-                <li class="">300+ hours</li>
-                <li class="">40+ Algorithms</li>
-              </ul>
-            </div>
-            <div class="card-footer text-right">
-              <a href="https://www.freecodecamp.org/certification/rizanmusthafa/javascript-algorithms-and-data-structures"
-                target="_blank" class="btn">View</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 p-3">
-          <div class="card bg-light">
-            <img src="./img/achivements/DIWE_Pearson.png  " alt="certificate for rizan" class="card-img-top">
-            <div class="card-body">
-              <h5 class="text-center">DiWE in ESOFT metro campus</h5>
-              <ul class="text-info ach-ins-list">
-                <li class="">6 months</li>
-                <li class="">HTML, CSS, JavaScript, PHP, MySQL</li>
-                <li class="">Final Project</li>
-              </ul>
-            </div>
-            <div class="card-footer text-right">
-              <a href="#" disabled="true" target="_blank" class="btn disabled">View</a>
-            </div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="project-section text-dark py-5">
-    <div class="container">
-      <h4 class="section-head">My personal projects</h4>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">React Youtube App</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/react-youtube-view.png" alt="react-youtube-app sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/react-youtube-view/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/react-youtube-view" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">React wikipedia App</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/react-wiki-app.png" alt="react-wikipedia-app sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/react-wiki-viewer/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/react-wiki-viewer" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Vue Todo App</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/my-todo-app.png" alt="vue my-todo-app sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/my-todo-app/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/my-todo-app" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Random Quotes App</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/random-quotes.png" alt="random-quotes-app sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/random-quotes/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/random-quotes" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Simple Weather App</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/simple-weather-app.png" alt="simple-weather-app sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/weather-app/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/weather-app" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Wiki Finder</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/WIKI-finder.png" alt="WIKI-finder sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/WIKI-finder/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/WIKI-finder" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Twitch TV Stream</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/twitch-tv-stream.png" alt="Twitch-tv-stream sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/Twitch-tv-stream/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/Twitch-tv-stream" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Basic Calculator</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/calculator.png" alt="calculator sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/calculator/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/calculator" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Pomodoro Clock</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/pomodoro-clock.png" alt="pomodoro-clock sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/pomodoro-clock/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/pomodoro-clock" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4 my-3">
-          <div class="card">
-            <div class="card-header">
-              <h5 class="card-title">Simon Game</h5>
-            </div>
-            <div class="card-body">
-              <img src="./img/projects/simon-game.png" alt="simon-game sample" class="card-img-top">
-              <p class="card-text text-right text-muted pt-4">By Rizan Mohomed</p>
-            </div>
-            <div class="card-footer">
-              <a href="https://rizanmusthafa.github.io/simon-game/" target="_blank" class="btn float-left">View
-                App</a>
-              <a href="https://github.com/RizanMusthafa/simon-game" target="_blank" class="btn float-right">View
-                Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contact" class="text-light py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 address">
-          <h5>Rizan Mohomed</h5>
-          <p>
-            No. 47/11, <br />
-            school lane, <br />
-            hirimbura cross road, <br />
-            Galle, Sri Lanka. <br />
-            <span class="email">
-              <i class="fas fa-envelope"></i>
-              musthafarizan@gmail.com
-            </span>
-          </p>
-        </div>
-        <div class="col-12 col-md-6 smedia-links">
-          <a href="https://www.linkedin.com/in/rizan-musthafa-2340a1144/" target="_blank" class="linkedin">
-            <i class="fab fa-linkedin"></i>
-            LinkedIn
-          </a>
-          <a href="https://twitter.com/rizanmusthafa" class="twitter" target="_blank">
-            <i class="fab fa-twitter"></i>
-            Twitter
-          </a>
-          <a href="https://github.com/RizanMusthafa" class="github" target="_blank">
-            <i class="fab fa-github"></i>
-            Github
-          </a>
-          <a href="https://www.freecodecamp.org/rizanmusthafa" class="freecodecamp" target="_blank">
-            <i class="fab fa-free-code-camp"></i>
-            Free Code Camp
-          </a>
-          <a href="https://www.facebook.com/rizanmusthafa" class="facebook" target="_blank">
-            <i class="fab fa-facebook"></i>
-            Facebook
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl"
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $('[data-toggle="popover"]').popover();
-    });
-
-    $('body').scrollspy({ target: '.navbar', offset: 50 })
-
-    $('.scrollspy-trigger').on('click', function (e) {
-      if (this.hash === "") return;
-      e.preventDefault();
-      var hashTarget = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hashTarget).offset().top
-      }, 1000, function () {
-        window.location.hash = hashTarget;
-      });
-    });
-  </script>
-</body>
-
+    </noscript>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

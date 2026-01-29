@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme Colors - RGB format for opacity support */
+    --color-background: 250, 251, 252;
+    --color-surface: 255, 255, 255;
+    --color-primary: 30, 58, 95;
+    --color-primary-light: 61, 90, 128;
+    --color-primary-dark: 21, 42, 69;
+    --color-accent: 238, 108, 77;
+    --color-accent-light: 242, 139, 112;
+    --color-accent-dark: 217, 74, 43;
+    --color-text-primary: 26, 26, 46;
+    --color-text-secondary: 100, 116, 139;
+    --color-text-muted: 148, 163, 184;
+    --color-border: 226, 232, 240;
+  }
+
+  /* Dark theme: apply variables when html has .dark class */
+  html.dark {
+    --color-background: 15, 23, 42;
+    --color-surface: 30, 41, 59;
+    --color-primary: 96, 165, 250;
+    --color-primary-light: 147, 197, 253;
+    --color-primary-dark: 59, 130, 246;
+    --color-accent: 249, 115, 22;
+    --color-accent-light: 251, 146, 60;
+    --color-accent-dark: 234, 88, 12;
+    --color-text-primary: 241, 245, 249;
+    --color-text-secondary: 148, 163, 184;
+    --color-text-muted: 100, 116, 139;
+    --color-border: 51, 65, 85;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased;
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-text-primary));
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+
+  ::selection {
+    background-color: rgba(var(--color-primary), 0.2);
+    color: rgb(var(--color-primary));
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-32;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+
+  .glass {
+    background-color: rgba(var(--color-surface), 0.8);
+    @apply backdrop-blur-md;
+  }
+
+  .glass-strong {
+    background-color: rgba(var(--color-surface), 0.9);
+    @apply backdrop-blur-lg;
+  }
+}
+
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Custom scrollbar - use CSS variables so they respond to theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(var(--color-background));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--color-primary), 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(var(--color-primary), 0.4);
+}
+
+/* Dark mode shadows - only when html has .dark */
+html.dark .shadow-soft {
+  box-shadow: 0 2px 15px -3px rgba(0, 0, 0, 0.3), 0 10px 20px -2px rgba(0, 0, 0, 0.2);
+}
+
+html.dark .shadow-soft-lg {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.4), 0 20px 50px -15px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .shadow-glow {
+  box-shadow: 0 0 25px rgba(249, 115, 22, 0.4);
+}
+
+html.dark .shadow-glow-primary {
+  box-shadow: 0 0 25px rgba(96, 165, 250, 0.3);
+}

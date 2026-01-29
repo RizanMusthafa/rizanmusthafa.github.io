@@ -1,0 +1,7 @@
+# robots.txt for rizanmusthafa.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rizanmusthafa.github.io/sitemap.xml
