@@ -26,10 +26,10 @@ const ReactNativeLogo = ({ className = 'w-12 h-12' }: { className?: string }) =>
 );
 
 const FlutterLogo = ({ className = 'w-12 h-12' }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden preserveAspectRatio="xMidYMid meet">
     <path
       fill="currentColor"
-      d="M14.314 0L2.3 12 6 15.7 21.684.012h-7.357L14.314 0zm.014 11.072l-6.471 6.457 6.47 6.47H21.7L14.843 17.3l6.457-6.457-6.457-6.442z"
+      d="M14.314 0L2.3 12 6 15.7 21.684 .012h-7.357L14.314 0zm.014 11.072l-6.471 6.457 6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.371z"
     />
   </svg>
 );

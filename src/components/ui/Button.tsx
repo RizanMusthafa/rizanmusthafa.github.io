@@ -6,6 +6,7 @@ interface ButtonProps extends HTMLMotionProps<'button'> {
   size?: 'sm' | 'md' | 'lg';
   children: ReactNode;
   href?: string;
+  download?: boolean | string;
 }
 
 const variants = {
@@ -26,6 +27,7 @@ export function Button({
   size = 'md',
   children,
   href,
+  download,
   className = '',
   ...props
 }: ButtonProps) {
@@ -40,6 +42,7 @@ export function Button({
         whileTap={{ scale: 0.98 }}
         target={href.startsWith('http') ? '_blank' : undefined}
         rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
+        download={download}
       >
         {children}
       </motion.a>
