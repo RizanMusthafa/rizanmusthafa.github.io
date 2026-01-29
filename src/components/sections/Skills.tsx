@@ -2,6 +2,44 @@ import { motion } from 'framer-motion';
 import { profile, SkillCategory } from '../../data/profile';
 import { SectionHeading } from '../ui/SectionHeading';
 
+/* Main tech logos – React, React Native, Flutter */
+const ReactLogo = ({ className = 'w-12 h-12' }: { className?: string }) => (
+  <svg className={className} viewBox="-11.5 -10.23174 23 20.46348" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <circle r="2.05" fill="currentColor" />
+    <g stroke="currentColor" strokeWidth="0.5" fill="none">
+      <ellipse rx="11" ry="4.2" />
+      <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+      <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+    </g>
+  </svg>
+);
+
+const ReactNativeLogo = ({ className = 'w-12 h-12' }: { className?: string }) => (
+  <svg className={className} viewBox="-11.5 -10.23174 23 20.46348" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <circle r="2.05" fill="currentColor" />
+    <g stroke="currentColor" strokeWidth="0.5" fill="none">
+      <ellipse rx="11" ry="4.2" />
+      <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+      <ellipse rx="11" ry="4.2" transform="rotate(120)" />
+    </g>
+  </svg>
+);
+
+const FlutterLogo = ({ className = 'w-12 h-12' }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <path
+      fill="currentColor"
+      d="M14.314 0L2.3 12 6 15.7 21.684.012h-7.357L14.314 0zm.014 11.072l-6.471 6.457 6.47 6.47H21.7L14.843 17.3l6.457-6.457-6.457-6.442z"
+    />
+  </svg>
+);
+
+const mainTechs = [
+  { name: 'React Native', Logo: ReactNativeLogo, color: 'from-cyan-500/20 to-blue-500/20', borderColor: 'border-cyan-500/30' },
+  { name: 'React', Logo: ReactLogo, color: 'from-sky-500/20 to-blue-500/20', borderColor: 'border-sky-500/30' },
+  { name: 'Flutter', Logo: FlutterLogo, color: 'from-blue-500/20 to-indigo-500/20', borderColor: 'border-blue-500/30' },
+];
+
 const categoryInfo: Record<keyof SkillCategory, { title: string; icon: JSX.Element; color: string }> = {
   frontend: {
     title: 'Frontend',
@@ -133,6 +171,34 @@ export function Skills() {
           title="Skills & Technologies"
           subtitle="The tools and technologies I use to bring ideas to life"
         />
+
+        {/* Main techs – React Native, React, Flutter */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.4 }}
+          className="flex flex-wrap justify-center gap-4 sm:gap-6 mb-12"
+        >
+          {mainTechs.map(({ name, Logo, color, borderColor }, index) => (
+            <motion.div
+              key={name}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.35, delay: index * 0.08 }}
+              whileHover={{ scale: 1.03, y: -4 }}
+              className={`group flex items-center gap-4 px-6 py-4 sm:px-8 sm:py-5 rounded-2xl bg-surface border ${borderColor} shadow-soft hover:shadow-glow-primary transition-all duration-300`}
+            >
+              <div className={`w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-gradient-to-br ${color} flex items-center justify-center text-primary`}>
+                <Logo className="w-8 h-8 sm:w-10 sm:h-10" />
+              </div>
+              <span className="text-lg font-semibold text-text-primary group-hover:text-primary transition-colors">
+                {name}
+              </span>
+            </motion.div>
+          ))}
+        </motion.div>
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
